@@ -1,72 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+    overflow: hidden;
 }
-
-body{
+.hero {
+    height: 100vh;
+    background: url(./image/Hero-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
     background-color: black;
-    font-family: "Open Sans","Roboto","sans-serif";
+    margin: 0px;
 }
-
-/* Navigation */
-.nav-container{
-    width: 1440px;
-height: 142px;
-left: 0px;
-top: 0px;
-
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-nav{
+.topbar{
+    background: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
+    border-bottom: 2px solid #ffbd59;
 }
-
-nav ul{
+.logo1 ,.logo2 {
+    height: 12vh;
+    padding: 18px;
+    margin: 8px;
+}
+.navBar {
     display: flex;
+    flex-direction: column;
+    flex: 1;
 }
-
-nav .logo1{
-width: 108px;
-height: 80px;
-left: 16px;
-top: 22px;
+.mainHeading {
+    color: white;
+    text-align: center;
+    /* font-size: 3vw; */
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin: 0px;
+    border-bottom: 2px solid #ffbd59;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-
-nav .logo2{
-width: 54px;
-height: 106.54px;
-left: 1343px;
-top: 10px;
-}
-.nav-items li{
+.navItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px;
     list-style: none;
-    margin-right: 100px;
 }
-
-.nav-items li a{
-box-sizing: border-box;
-width: 120.11px;
-height: 33.33px;
-left: 659.88px;
-top: 89px;
-border: 2px solid #D4A051;
-border-radius: 36px;
-font-family: 'Arimo';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 17px;
-text-align: center;
-letter-spacing: -0.02em;
-
-color: #FFFFFF;
-text-decoration: none;
+.navItems > li > a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px;
+    border: 1.5px solid #ffbd59;
+    border-radius: 12px;
+}
+.navItems > li > a:hover {
+    background: white;
+    color: black;
 }
