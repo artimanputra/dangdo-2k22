@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     max-width: 100vw;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .hero {
     height: 100vh;
@@ -64,15 +64,3 @@ body {
     color: black;
 }
 
-
-.midSection{
-    height: 70vh;
-    background-color: black;
-    
-}
-.midSection .logo3{
-    margin-left: auto;  
-     margin-right: auto;
-    width: 50%;
-    display: block;
-}
